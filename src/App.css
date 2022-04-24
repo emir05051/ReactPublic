@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body,
+html {
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: normal;
+  flex-wrap: wrap;
+}
+.wrapper div {
+  margin: 0 5px;
+}
+.marginTop {
+  margin-top: 10px;
+}
+.book {
+  height: calc(100vh - 22px);
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 0px 10px;
+  background-color: #297373;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.book img {
+  height: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book h1 {
+  color: white;
+}
+.book h3 {
+  color: white;
+}
+.bookContent {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+.bookContent p {
+  text-align: left;
+  font-size: 15px;
+}
+.bookContent input {
+  font-size: 30px;
+  margin-top: 10px;
+  background-color: #a4ac96;
+  color: white;
+}
+.bookContent textarea {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #a4ac96;
+  color: white;
+}
+.bookContent button {
+  background-color: #a4ac96 !important;
+  color: white;
+}
+.bookContent button:focus {
+  color: white;
+}
+.createBook {
+  display: flex;
+  flex-direction: column;
+}
+.createBook label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  text-transform: capitalize;
 }
